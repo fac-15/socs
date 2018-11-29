@@ -14,7 +14,6 @@ test("check if status code is 200", t => {
     .expect("Content-Type", /html/)
     .end((err, res) => {
       t.error(err);
-      t.equal(res.text, "hello", "response should contain 'hello'");
       t.end();
     });
 });
@@ -26,7 +25,11 @@ test("check if status code is 404", t => {
     .expect("Content-Type", /html/)
     .end((err, res) => {
       t.error(err);
-      t.equal(res.text, "unknown uri", "response should contain 'unknown uri'");
+      t.equal(
+        res.text,
+        "404 not found error",
+        "response should contain '404 not found error'"
+      );
       t.end();
     });
 });
