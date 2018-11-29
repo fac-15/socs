@@ -33,3 +33,17 @@ test("check if status code is 404", t => {
       t.end();
     });
 });
+
+test("check that filter function doesn't change the input", t => {
+  const input = {};
+  //placeholder for function
+  const actual = input;
+  const expected = [];
+  console.log(input === expected);
+  t.equals(
+    actual,
+    expected,
+    "The output of the filter function should be different than the input"
+  );
+  t.end();
+});
