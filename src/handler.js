@@ -5,12 +5,20 @@ const request = require("request");
 
 const handlerApi = (req, res) => {
   console.log("my api is working");
-  request("https://www.coops.tech/wp-json/wp/v2/types", {json: true}, (err, response, body) => {
+  request("https://www.coops.tech/wp-json/wp/v2/co_op", {json: true}, (err, response, body) => {
     if (err) {
       return console.log(err);
-    } 
-      console.log("this is the body", body);
-      res.end(body);
+    } else {
+      console.log("this is the body", body[0].id);
+      console.log("this is the body", body[1].id);
+      console.log("this is the body", body[2].id);
+      console.log("this is the body", body[3].id);
+      console.log("this is the body", body[4].id);
+
+      res.writeHead(200, {"Content-Type" : "application/json"});
+      res.end(JSON.stringify(body));
+    }
+
   });
 }
 
@@ -23,8 +31,9 @@ const handlerHome = (req, res) => {
       res.end("<h1>We've hit an error 500</h1>");
     } else {
       res.writeHead(200, { "Content-Type": "text/html" });
-      res.end(file);
       handlerApi(req, res);
+      res.end(file);
+
     }
   });
 };
@@ -51,8 +60,8 @@ const handlerPublic = (req, res, url) => {
       res.end("<h1>We've hit an error 500</h1>");
     } else {
       res.writeHead(200, `Content-Type : ${extType[ext]}`);
-      res.end(file);
       handlerApi(req, res);
+      res.end(file);
     }
   });
 };
