@@ -8,7 +8,7 @@ const router = (req, res) => {
     handler.handlerPublic(req, res, url);
   } else {
     res.writeHead(404, { "Content-Type": "text/html" });
-    res.end("<h1> 404 not found error </h1>");
+    res.end("404 not found error");
   }
 };
 
