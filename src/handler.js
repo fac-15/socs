@@ -1,5 +1,18 @@
 const fs = require("fs");
 const path = require("path");
+const request = require("request");
+
+
+const handlerApi = (req, res) => {
+  console.log("my api is working");
+  request("https://www.coops.tech/wp-json/wp/v2/types", {json: true}, (err, response, body) => {
+    if (err) {
+      return console.log(err);
+    } 
+      console.log("this is the body", body);
+      res.end(body);
+  });
+}
 
 const handlerHome = (req, res) => {
   const filePath = path.join(__dirname, "..", "public", "index.html");
@@ -11,6 +24,7 @@ const handlerHome = (req, res) => {
     } else {
       res.writeHead(200, { "Content-Type": "text/html" });
       res.end(file);
+      handlerApi(req, res);
     }
   });
 };
@@ -38,11 +52,15 @@ const handlerPublic = (req, res, url) => {
     } else {
       res.writeHead(200, `Content-Type : ${extType[ext]}`);
       res.end(file);
+      handlerApi(req, res);
     }
   });
 };
 
+
+
 module.exports = {
+  handlerApi,
   handlerHome,
   handlerPublic
 };
