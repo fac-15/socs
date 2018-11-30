@@ -24,13 +24,12 @@
   "devDependencies": {
     "eslint": "^5.9.0",
     "nodemon": "^1.18.7",
+    "query-string": "^6.2.0",
     "request": "^2.88.0",
     "supertest": "^3.3.0",
     "tap-spec": "^5.0.0",
     "tape": "^4.9.1",
     "xmlhttprequest": "^1.8.0"
   },
-  "dependencies": {
-    "query-string": "^6.2.0"
-  }
+  "dependencies": {}
 }
