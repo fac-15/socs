@@ -1,5 +1,69 @@
+/* Colors */
+:root {
+  --lightBlue: #38aad5;
+  --darkBlue: #0c3d4f;
+  --offWhite: #faffff;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 h1 {
-  color: red;
+  color: var(--offWhite);
+  font-size: 3rem;
+  letter-spacing: -2px;
+  padding-left: 10px;
+  transition: all 0.4s ease-in;
+}
+
+h1:hover {
+  transform: rotate(360deg);
+}
+
+header {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 3rem;
+  width: 3rem;
+  transition: all 0.4s ease-in;
+}
+
+.logo:hover {
+  transform: rotate(144deg);
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 70vh;
+  height: 70vh;
+  background-color: var(--lightBlue);
+}
+
+#search {
+  border: 1px solid var(--darkBlue);
+  width: 20rem;
+  height: 2rem;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  background-color: var(--darkBlue);
+  color: var(--offWhite);
 }
 
 

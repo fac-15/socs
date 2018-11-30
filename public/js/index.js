@@ -17,19 +17,17 @@ document.getElementById("search").addEventListener("keyup", function(e) {
   // if (e.target.value)
 });
 
-const newDataCallback = (coTech) => {
-// document.getElementById('test').innerHTML = coTech.slug;
-console.log('CoTech full list', coTech);
+const newDataCallback = coTech => {
+  // document.getElementById('test').innerHTML = coTech.slug;
+  let dataList = document.getElementById("datalist");
+
+  while (dataList.firstChild) {
+    dataList.removeChild(dataList.firstChild);
+  }
+  console.log("CoTech full list", coTech);
   coTech.forEach(function(coop) {
-    let dataList = document.getElementById("datalist");
-
-    while(dataList.firstChild) {
-      dataList.removeChild(dataList.firstChild);
-    }
-
     let dataEntry = document.createElement("OPTION");
     dataEntry.setAttribute("value", coop.title.rendered);
     dataList.appendChild(dataEntry);
-  })
-
-}
+  });
+};
