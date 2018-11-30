@@ -14,11 +14,12 @@
 
     <div id="test"></div>
     <label for="search"><p hidden>search</p>
-    <input type="text" id="search" name="search" placeholder="Type organisation name or filter tag here" required>
+          <input type="text" id="search" list="datalist" name="search" placeholder="Type organisation name" required>
+          <datalist id='datalist'></datalist>
     </label>
   </main>
 
 <script type="text/javascript" src="public/js/request.js"></script>
-<!-- <script type="text/javascript" src="public/js/index.js"></script> -->
+<script type="text/javascript" src="public/js/index.js"></script>
 </body>
 </html>
