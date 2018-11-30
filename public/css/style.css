@@ -1,3 +1,41 @@
+/* Colors */
+:root {
+  --lightBlue: #00c5f8;
+  --darkBlue: #0c3d4f;
+  --offWhite: #f4feff;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  height: 15vh;
+  background-color: var(--offWhite);
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 70vh;
+  height: 70vh;
+  background-color: var(--lightBlue);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  background-color: var(--darkBlue);
+  color: var(--offWhite);
+}
+
 h1 {
-  color: red;
+  color: var(--darkBlue);
+}
+
+#search {
+  border: 1px solid var(--darkBlue);
 }
