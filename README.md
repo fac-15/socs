@@ -31,14 +31,14 @@ We learnt that we've learned a lot these last four weeks lol. It felt good to be
 
 ## Things we're proud of 
 
-![team work](https://media.giphy.com/media/lWeUm3HRhkhvG/giphy.gif) 
-
 Team chemistry on poiiiiiiiiiiiint. 
 We worked well together and made sure that everyone knew what everyone was doing/had done. 
 
 We started out writing tests before anything else, unfortunately that fell apart as soon as we had issues with our code lol.
 
 We figured out how to deploy to Heroku. The issue we had was that we needed a "start" : "node src/server.js" in our package.json.
+
+![high five](https://media.giphy.com/media/ujCQhN8MKzlTi/giphy.gif)
 
 ## Stretch goals 
 
