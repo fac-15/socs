@@ -30,5 +30,7 @@
     "tape": "^4.9.1",
     "xmlhttprequest": "^1.8.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "query-string": "^6.2.0"
+  }
 }
