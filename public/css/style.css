@@ -65,3 +65,25 @@ footer {
   background-color: var(--darkBlue);
   color: var(--offWhite);
 }
+
+
+#search-button {
+  border-radius: 5px;
+  border: 0;
+  width: 80px;
+  height:25px;
+  font-family: Tahoma;
+  background: #f4f4f4;
+  background: -moz-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #f4f4f4), color-stop(100%, #ededed));
+  background: -webkit-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+  background: -o-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+  background: -ms-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+  background: linear-gradient(to bottom, #f4f4f4 1%, #ededed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4', endColorstr='#ededed', GradientType=0);
+
+}
+
+#search-button:hover {
+background: rgb(115, 143, 115);
+}
