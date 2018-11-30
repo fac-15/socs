@@ -1,17 +1,42 @@
 /* Colors */
 :root {
-  --lightBlue: #00c5f8;
+  --lightBlue: #38aad5;
   --darkBlue: #0c3d4f;
-  --offWhite: #f4feff;
+  --offWhite: #faffff;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
 }
 
+h1 {
+  color: var(--offWhite);
+  font-size: 3rem;
+  letter-spacing: -2px;
+  padding-left: 10px;
+  transition: all 0.4s ease-in;
+}
+
+h1:hover {
+  transform: rotate(360deg);
+}
+
 header {
-  height: 15vh;
-  background-color: var(--offWhite);
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 3rem;
+  width: 3rem;
+  transition: all 0.4s ease-in;
+}
+
+.logo:hover {
+  transform: rotate(144deg);
 }
 
 .main-content {
@@ -23,19 +48,20 @@ header {
   background-color: var(--lightBlue);
 }
 
+#search {
+  border: 1px solid var(--darkBlue);
+  width: 20rem;
+  height: 2rem;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+}
+
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 15vh;
+  height: 30vh;
   background-color: var(--darkBlue);
   color: var(--offWhite);
-}
-
-h1 {
-  color: var(--darkBlue);
-}
-
-#search {
-  border: 1px solid var(--darkBlue);
 }
