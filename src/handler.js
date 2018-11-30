@@ -16,6 +16,7 @@ const handlerApi = (req, res) => {
       console.log("this is the body", body[3].id);
       console.log("this is the body", body[4].id);
 
+    console.log("this is the body", body);
       const searchInput = queryString.parse(req.url)["/search"];
       let filteredObj = body.filter(bodyParts => {
       return bodyParts.slug.includes(searchInput);
