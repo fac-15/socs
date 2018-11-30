@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "tape test/test.js | tap-spec",
-    "start": "nodemon src/server.js"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
   "devDependencies": {
     "eslint": "^5.9.0",
     "nodemon": "^1.18.7",
+    "query-string": "^6.2.0",
     "request": "^2.88.0",
     "supertest": "^3.3.0",
     "tap-spec": "^5.0.0",

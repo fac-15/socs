@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const request = require("request");
+const queryString = require("query-string");
 
 
 const handlerApi = (req, res) => {
@@ -15,8 +16,12 @@ const handlerApi = (req, res) => {
       console.log("this is the body", body[3].id);
       console.log("this is the body", body[4].id);
 
+      const searchInput = queryString.parse(req.url)["/search"];
+      let filteredObj = body.filter(bodyParts => {
+        return bodyParts.slug.includes(searchInput);
+        })
       res.writeHead(200, {"Content-Type" : "application/json"});
-      res.end(JSON.stringify(body));
+      res.end(JSON.stringify(filteredObj));
     }
 
   });

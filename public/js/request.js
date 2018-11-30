@@ -1,4 +1,7 @@
-function fetchData() {
+
+
+
+function fetchData(inputValue) {
   let xhr = new XMLHttpRequest();
   //call fetch data with no params
   //print to the console
@@ -10,7 +13,7 @@ function fetchData() {
              console.log('******THIS IS THE XHR API WORKING******')
         }
     };
-    xhr.open("GET", "/data", true);
+    xhr.open("GET",`/search=${inputValue}`, true);
     xhr.send();
 };
 fetchData();
