@@ -1,12 +1,13 @@
 const handler = require("./handler.js");
 
+
 const router = (req, res) => {
   const url = req.url;
   if (url === "/") {
     handler.handlerHome(req, res);
   } else if (url.indexOf("public") !== -1) {
     handler.handlerPublic(req, res, url);
-  } else if(url === "/data") {
+  } else if(url.includes("search")) {
     handler.handlerApi(req, res);
   }else {
     res.writeHead(404, { "Content-Type": "text/html" });
