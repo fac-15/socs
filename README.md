@@ -1,19 +1,20 @@
 [![Build Status](https://travis-ci.com/fac-15/socs.svg?branch=staging)](https://travis-ci.com/fac-15/socs)
-# HELLO IM A README
+# HELLO IM A README📰 
+[Link to our project](https://socms.herokuapp.com/)
 
-To look at the project:
+To look at the project🔎:
 1. clone the repo
 2. cd into the folder
 3. write npm i in the terminal
 4. npm run dev
 
-## User stories 
+## User stories 🤔
 
 "As a cotech website visitor, I would like to know which companies I can collaborate with" 
 
 "I want to be able to see if a specific company is a member of cotech"
 
-## Goals 
+## Goals 🎳
 
 We set out to call the cotech API (that they are going to take away in a near future lol) from our server. 
 
@@ -23,13 +24,13 @@ We set out to call the cotech API (that they are going to take away in a near fu
 
 - Make a dropdown list (TURNED OUT TO BE HARDER THAN WE THOUGHT)
 
-## Things we learned 
+## Things we learned 🛸
 
 We learnt that we've learned a lot these last four weeks lol. It felt good to be able to recap all of the previous weeks learning outcomes together. 
 
 ![celebrate](https://media.giphy.com/media/FCCtKHPjWGqic/giphy.gif)
 
-## Things we're proud of 
+## Things we're proud of 🌋
 
 Team chemistry on poiiiiiiiiiiiint. 
 We worked well together and made sure that everyone knew what everyone was doing/had done. 
@@ -40,7 +41,7 @@ We figured out how to deploy to Heroku. The issue we had was that we needed a "s
 
 ![high five](https://media.giphy.com/media/ujCQhN8MKzlTi/giphy.gif)
 
-## Stretch goals 
+## Stretch goals 🛒
 
 - Make an autocomplete searchbar 
 
