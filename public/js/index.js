@@ -1,6 +1,7 @@
 document.getElementById("search").addEventListener("keyup", function(e) {
   // e.preventDefault();
   if (e.keyCode == 13) {
+
   } else {
     let inputValue = document.getElementById("search").value;
 
