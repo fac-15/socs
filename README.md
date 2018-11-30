@@ -5,7 +5,7 @@
 To look at the project🔎:
 1. clone the repo
 2. cd into the folder
-3. write npm i in the terminal
+3. write `npm i -D` in the terminal
 4. npm run dev
 
 ## User stories 🤔
